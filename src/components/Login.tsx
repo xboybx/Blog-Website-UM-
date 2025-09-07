@@ -38,6 +38,11 @@ const Login: React.FC<LoginProps> = ({ onSwitchToRegister }) => {
 
   return (
     <Card className="w-full max-w-md mx-auto border-2 border-black neo-shadow bg-white">
+      <div className="mb-6 p-4 bg-yellow-100 border-2 border-yellow-400 rounded text-black text-center">
+        <p className="font-semibold mb-2">New here?</p>
+        <p className="mb-2">Please <span className="font-bold">create an account</span> before logging in.</p>
+        <p className="mb-2">After logging in, you can start creating your own stories by clicking the <span className="font-bold">Write</span> button at the top of the page.</p>
+      </div>
       <CardHeader className="bg-black text-white p-8 text-center">
         <div className="flex justify-center mb-4">
           <img src={getRandomImage()} alt="login visual" className="w-16 h-16 object-cover rounded-full border-2 border-black" />
